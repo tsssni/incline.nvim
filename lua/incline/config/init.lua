@@ -155,10 +155,7 @@ M.schema = Schema(function(s)
       ),
     },
     highlight = {
-      groups = s:entry({
-        InclineNormal = { group = 'NormalFloat', default = true },
-        InclineNormalNC = { group = 'NormalFloat', default = true },
-      }, vx.map(vx.string, vx.highlight.any), { transform = tx.extend }),
+      groups = s:entry({}, vx.map(vx.string, vx.highlight.any), { transform = tx.extend }),
     },
   }, {
     deprecated = {
